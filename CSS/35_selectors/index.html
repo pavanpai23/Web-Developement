@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+[data-color="primary"]{
+    margin-top: 20px;
+} */
+
+/* .box:nth-child(odd){
+    background-color: red;
+} */
+
+/* .box:nth-last-child(1){
+background-color: aqua;
+} */
+
+
+.boxes::before{
+    content: "this is a good para";
+    color: red;
+}
+
+.boxes::after{
+    content: "I am Pavan Anant Pai";
+    color: blue;
+}
+
+::selection{
+    background-color: black;
+    color: aqua;
+}
+
+.box::first-letter{
+    color: chartreuse;
+    font-size: 45px;
+}
+
+input::placeholder{
+    color: rgb(244, 8, 208);
+    font-size: 15px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I Am 1st Box</div>
+        <div class="box">I Am 2nd Box</div>
+        <div class="box">I Am 3rd Box</div>
+        <input type="text" placeholder="Enter Your Name">
+    </div>
+</body>
+</html 
