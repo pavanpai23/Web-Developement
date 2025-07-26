@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Box</title>
+
+    <style>
+        .container {
+            border: 2px solid rgb(205, 9, 9);
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: row;
+            /* flex-direction: coloumn; */
+            flex-wrap: wrap;
+            align-content: center;
+            flex-flow: row wrap;
+            /*flex-flow: flex direction and flex wrap; */
+
+            gap: 30px;
+            row-gap: 40px;
+            column-gap: 10px;
+            gap: 40px 10px;
+            /*gap: row gap colomn gap; */
+
+        }
+
+        .iteam {
+            flex-grow: 1;
+            border: 2px solid aqua;
+            height: 72px;
+            width: 85px;
+            /* margin: 3px; */
+            background-color: blanchedalmond;
+
+
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+        }
+
+        .item1 {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="iteam item1">1</div>
+        <div class="iteam">2</div>
+        <div class="iteam">3</div>
+        <div class="iteam "></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+
+    </div>
+</body>
+
+</html>
