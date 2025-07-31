@@ -6,33 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Using Flexbox</title>
     <style>
-        
-        .logo img{
-width: 160px ;
+        .logo img {
+            width: 90px;
+            align-items: center;
         }
 
-        nav{
+        nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
         }
 
-        .right ul{
+        .right ul {
             display: flex;
             gap: 40px;
         }
 
-        .right ul li{
-            list-style:none;
+        .right ul li {
+            list-style: none;
             display: flex;
-    
-        } 
-        .right ul li  img{
-            width: 20px;
+            align-items: center;
+            cursor: pointer;
+
+
+
         }
 
-        
+        .right ul li img {
 
+            display: flex;
+            align-items: center;
+        }
+
+        .right ul li span {
+            padding: 0 5px;
+        }
     </style>
 </head>
 
@@ -40,15 +48,24 @@ width: 160px ;
     <header>
         <nav>
             <div class="logo">
-               <img src="https://core-app-prod-plannertools-filestack-eu-west-1.s3.eu-west-1.amazonaws.com/production-eu/account_152912/event_5073c816-8f48-4739-a69c-cdf0540bccc3/2350c76c-fd0f-417a-b457-9c4ca4cbd599_a3df4a0542743e97159d7329a90b94ae.png?AWSAccessKeyId=AKIA5OJOWGBE7E6KYMEM&Expires=1754185487&Signature=awz32ldF1zNoeiE4C68KA%2FGiMQ8%3D" alt="">
+                <img src="https://image.pitchbook.com/SdXhJSGj1TnmdOuRnTkc6yLY8Tz1726756856598_200x200" alt="">
             </div>
             <div class="right">
                 <ul>
-                    <li>product</li>
-                    <li>pricing</li>
-                    <li>resourses</li>
-                    <li>about us</li>
-                    <li><img src="https://play-lh.googleusercontent.com/UXMGLK3xfTpM_CDiWHet4Nwfgc1IB7yso9_ojZTwogBTDmrV5LrFxYCsqYUu2e13YA" alt=""></li>
+                    <li> <span>product</span><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBDAdSg2QxGqRd2xNpYKtUuP-rAkgsVV2guQ&s"
+                            width="10" height="10" alt=""></li>
+                    <li><span>pricing</span> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBDAdSg2QxGqRd2xNpYKtUuP-rAkgsVV2guQ&s"
+                            width="10" height="10" alt=""></li>
+                    <li><span>resourses</span> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBDAdSg2QxGqRd2xNpYKtUuP-rAkgsVV2guQ&s"
+                            width="10" height="10" alt=""></li>
+                    <li><span>about us</span> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBDAdSg2QxGqRd2xNpYKtUuP-rAkgsVV2guQ&s"
+                            width="10" height="10" alt=""></li>
+                    <li><img src="https://play-lh.googleusercontent.com/UXMGLK3xfTpM_CDiWHet4Nwfgc1IB7yso9_ojZTwogBTDmrV5LrFxYCsqYUu2e13YA"
+                            width="20"></li>
                 </ul>
             </div>
     </header>
