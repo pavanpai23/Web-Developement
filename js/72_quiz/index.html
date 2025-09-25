@@ -1,29 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .card{
+        .card {
             display: flex;
             border: 2px solid black;
+            width: 70vw;
+            padding: 4px;
+        }
+
+        .image img {
+            width: 250px;
+            height: 150px;
+
+        }
+
+        .text h1 {
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+            font-weight: 400;
+            padding: 2px 0;
+        }
+
+        .text p {
+            align-items: center;
+            display: flex;
+            font-size: 20px;
+            padding: 2px 0;
+        }
+
+        .image {
+            position: relative;
+        }
+
+        .image .capsule {
+            position: absolute;
+            z-index: 10;
+            bottom: 4px;
+            color: white;
+            background: #322a2a;
+            right: 0px;
+            opacity: 0.9;
+            padding: 5px;
+            margin: 3px;
+            border-radius: 4px;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="card">
             <div class="image">
-        <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCKktmHuXV_macV6MoUwhKxwzXJ7w" alt="" class="src">
+                <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCKktmHuXV_macV6MoUwhKxwzXJ7w"
+                    alt="" class="src">
+                <div class="capsule">31.06</div>
+            </div>
+
+            <div class="text">
+                <h1>Introduction to beakend | Sigma WebDevelopemnet Course</h1>
+                <p>CodeWithHarry . 727k Views . 2 months ago</p>
+            </div>
         </div>
-        </div>
-        <div class="text">
-              <h1>Introduction to beakend | Sigma WebDevelopemnet Course</h1>
-              <p>CodeWithHarry . 727k Views . 2 months ago</p>
-        </div>
-        
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
