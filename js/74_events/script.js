@@ -1,10 +1,15 @@
 let button=document.getElementById("btn")
 
-button.addEventListener("click", ()=>{
+button.addEventListener("dblclick", ()=>{
     document.querySelector(".box").innerHTML="<b>hwy click here</b> enjoy your click!"
 })
 
-document.addEventListener("keydown",(e) =>{
-        console.log(e.ekey, e.keycode);
+button.addEventListener("contextmenu",()=>{
+ alert("dont hack")
+})
+
+document.addEventListener("keydown",(e)=>{
+        console.log(e,e.key, e.keycode)
         })
+
 
