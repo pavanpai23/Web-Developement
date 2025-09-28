@@ -7,8 +7,8 @@ let prom = new Promise((resolve, reject) => {
     }
     else {
         setTimeout(() => {
-            console.log('yes i am done');
-            console.log('pav')
+            console.log('yes i am done')
+            resolve("pav")
         }, 3000)
     }
 
@@ -21,13 +21,22 @@ let prom2 = new Promise((resolve, reject) => {
         reject("no random no. supporiting you")
     } else {
         setTimeout(() => {
-            console.log('yes i am done with you');
-            console.log('pav coding og')
+            console.log('yes i am done with you')
+            resolve("pav2")
+
         }, 1000)
     }
 })
 
-let p3 = Promise.all([prom, prom2])
+// let p3 = Promise.all([prom, prom2])
+// p3.then((a) => {
+//     console.log(a);
+// }).catch(err => {
+//     console.log(err);
+// }
+// )
+
+let p3 = Promise.race([prom, prom2])
 p3.then((a) => {
     console.log(a);
 }).catch(err => {
